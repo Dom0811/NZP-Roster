@@ -13,37 +13,47 @@
     <style>
         body {
             margin: 0;
-            /* Deep, dark blue gradient matching a police operations theme */
             background: linear-gradient(135deg, #060d1a 0%, #0c1a33 100%);
             color: white;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px 0;
+            box-sizing: border-box;
         }
 
         .card {
-            /* Matches the dark charcoal color from the logo image for a seamless look */
             background: #1f2326; 
-            padding: 50px;
+            padding: 40px;
             border-radius: 16px;
             text-align: center;
-            width: 420px;
+            width: 450px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
-        img {
-            width: 130px;
+        /* Style for the top Crest logo */
+        .crest-logo {
+            width: 110px;
             height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the Roblox police banner image */
+        .banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
             margin-bottom: 15px;
-            border-radius: 8px; /* Slightly rounds corners if needed */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
             margin: 0;
-            font-size: 34px;
+            font-size: 32px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 800;
@@ -52,7 +62,7 @@
 
         p {
             color: #94a3b8;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.6;
             margin-top: 10px;
             margin-bottom: 20px;
@@ -69,7 +79,6 @@
             font-weight: bold;
             letter-spacing: 0.5px;
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-            /* Smooth animations */
             transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
         }
 
@@ -89,10 +98,13 @@
 
 <div class="card">
 
-    <!-- Ensure your image file is named logo.png in GitHub -->
-    <img src="logo.png" alt="NZP Crest">
+    <!-- 1. The Crest Logo at the top -->
+    <img src="logo.png" alt="NZP Crest" class="crest-logo">
 
     <h1>NZP Roster</h1>
+
+    <!-- 2. The Roblox Police Banner Image in the middle -->
+    <img src="police.png" alt="NZP Team Banner" class="banner-img">
 
     <p>
         Official Duty Roster<br>
